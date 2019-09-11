@@ -8,13 +8,12 @@ Tags: one-column, right-sidebar, custom-header, custom-menu, custom-logo, blog
 */
 
 /* Custom CSS */
-.social-media-icons
-{
+.social-media-icons {
     background: green; height: 30px;
 }
-.search{
+.search {
     background: yellow; height: 30px;
 }
-.menu ul li{
+.main-menu ul li {
     display: inline;
 }

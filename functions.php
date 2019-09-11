@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 /* Register menu */
 register_nav_menus(
     array(
-        'main_menu' => 'Main Menu'
+        'main_menu' => 'Main Menu',
+        'footer_menu' => 'Footer Menu'
     )
 );
