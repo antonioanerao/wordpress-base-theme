@@ -1,0 +1,20 @@
+/*
+Theme Name: Hahamu
+Theme URI: https://www.phantsoft.com.br
+Author: Antonio Anerão
+Description: Basic theme for Elementor
+Version: 1.0.0
+Tags: one-column, right-sidebar, custom-header, custom-menu, custom-logo, blog
+*/
+
+/* Custom CSS */
+.social-media-icons
+{
+    background: green; height: 30px;
+}
+.search{
+    background: yellow; height: 30px;
+}
+.menu ul li{
+    display: inline;
+}

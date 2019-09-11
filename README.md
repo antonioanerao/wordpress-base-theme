@@ -1,0 +1,1 @@
+Tema desenvolvido no curso de WordPress para Desenvolvedores
