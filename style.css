@@ -17,3 +17,8 @@ Tags: one-column, right-sidebar, custom-header, custom-menu, custom-logo, blog
 .main-menu ul li {
     display: inline;
 }
+
+.wp-post-image {
+    float: left;
+    margin: 0 15px 10px 0;
+}
