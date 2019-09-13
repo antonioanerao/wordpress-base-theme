@@ -24,6 +24,9 @@ function wphahamu_config(){
     );
     add_theme_support('custom-header', $args);
     add_theme_support('post-thumbnails');
+    add_theme_support('post-formats', ['video', 'image']);
     add_image_size('index', 500, 500, true);
+
+
 }
 add_action('after_setup_theme', 'wphahamu_config');
