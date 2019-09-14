@@ -4,6 +4,7 @@ function load_scripts(){
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array( 'jquery' ), '4.0.0', true );
 	wp_enqueue_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), '4.0.0', 'all' );
 	wp_enqueue_style( 'template', get_template_directory_uri() . '/css/template.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.1', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
@@ -45,6 +46,37 @@ function wpcurso_sidebars(){
         'name' => 'Blog Sidebar',
         'id' => 'sidebar-2',
         'description' => 'Sidebar to be usesd on Blog Page',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ]);
+
+    /* Our Services */
+    register_sidebar([
+        'name' => 'Services 1',
+        'id' => 'services-1',
+        'description' => 'Sidebar to be usesd on Services 1',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ]);
+
+    register_sidebar([
+        'name' => 'Services 2',
+        'id' => 'services-2',
+        'description' => 'Sidebar to be usesd on Services 2',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ]);
+
+    register_sidebar([
+        'name' => 'Services 3',
+        'id' => 'services-3',
+        'description' => 'Sidebar to be usesd on Services 3',
         'before_widget' => '<div class="widget-wrapper">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',
