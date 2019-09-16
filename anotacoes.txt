@@ -1,0 +1,6 @@
+#Archive
+- A página archive pode mostrar notícias de um determinado mês ou posts de uma categoria ou autor
+- A função the_archive_title() me retorna o título do arquivo na página. Ex: nome da categoria, mês das notícias etc
+- A função the_archive_description() exibe a descrição da categoria sendo mostrada.
+- Clicando no link do autor exibe-se os posts do autor. O mesmo para Tags
+- Opcionalmente pode-se criar um arquivo exclusivo para tag.php, category.php, date.php e author.php
