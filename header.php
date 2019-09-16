@@ -12,7 +12,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="social-media-icons col-xl-9 col-sm-7 col-6">Ícones Sociais</div>
-					<div class="search col-xl-3 col-sm-5 col-6 text-right">Pesquisa</div>			
+					<div class="search col-xl-3 col-sm-5 col-6 text-right"><?php get_search_form(); ?></div>
 				</div>
 			</div>
 		</section>
