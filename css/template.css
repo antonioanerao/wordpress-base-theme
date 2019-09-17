@@ -23,6 +23,8 @@ h4{ font-size: 18px; margin-top: 0; }
 
 /* Slider */
 .slide{ padding: 25px 0; }
+.recent-post-slider.design-2 .post-image-bg{ min-height: 700px; }
+.recent-post-slider.design-2 .post-content-left{ display: flex; align-items: center; }
 
 /* Services */
 .services{ background: #4c1b1b; padding: 25px 0; color: #fefefe; }

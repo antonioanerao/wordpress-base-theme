@@ -32,6 +32,7 @@ function wpcurso_config(){
 	add_theme_support( 'custom-header', $args );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-formats', array( 'video', 'image' ) );
+	add_theme_support('title-tag');
 }
 add_action( 'after_setup_theme', 'wpcurso_config', 0 );
 
@@ -83,6 +84,16 @@ function wpcurso_sidebars(){
         'name' => 'Services 3',
         'id' => 'services-3',
         'description' => 'Sidebar to be usesd on Services 3',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ]);
+
+    register_sidebar([
+        'name' => 'Slide',
+        'id' => 'slide-1',
+        'description' => 'Widget para adicionar Shortcode do Slide',
         'before_widget' => '<div class="widget-wrapper">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',

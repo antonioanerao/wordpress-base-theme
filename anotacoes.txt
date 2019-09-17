@@ -1,6 +1,17 @@
+#Funções
+- get_search_form() retorna o form de busca padrão
+- the_widget('WP_Widget_Recent_Posts', ['title'=>'Latests posts', 'number'=>3]) retorna posts recentes
+- language_attributes() na tag <html> no header para deixar o site no idioma da instalação
+- Adicionar em add_theme_support('title-tag') para gerar o título automaticamente é a maneira mais recomendada em novas versões
+  do WordPress
+
 #Archive
 - A página archive pode mostrar notícias de um determinado mês ou posts de uma categoria ou autor
 - A função the_archive_title() me retorna o título do arquivo na página. Ex: nome da categoria, mês das notícias etc
 - A função the_archive_description() exibe a descrição da categoria sendo mostrada.
 - Clicando no link do autor exibe-se os posts do autor. O mesmo para Tags
 - Opcionalmente pode-se criar um arquivo exclusivo para tag.php, category.php, date.php e author.php
+
+#Header
+- A função wp_title() retorna o título da página (para versões antigas WP)
+- A função bloginfo('charset') configura o charset do site automaticamente

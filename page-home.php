@@ -3,7 +3,17 @@
 		<main>
 			<section class="slide">
 				<div class="container">
-					<div class="row">Slide</div>
+					<div class="row">
+                        <div class="col-sm-12">
+                            <?php
+                                if(is_active_sidebar('slide-1')) {
+                                    dynamic_sidebar('slide-1');
+                                } else {
+                                    echo "Nenhum slide encontrado no momento";
+                                }
+                            ?>
+                        </div>
+                    </div>
 				</div>
 			</section>
 			<section class="services">
