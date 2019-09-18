@@ -18,7 +18,7 @@ function load_scripts(){
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 // Função de Configuração do Tema
-function wpcurso_config(){
+function wphahamu_config(){
 	// Registrando nossos menus
 	register_nav_menus(
 		array(
@@ -36,8 +36,12 @@ function wpcurso_config(){
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-formats', array( 'video', 'image' ) );
 	add_theme_support('title-tag');
+	add_theme_support('custom-logo', [
+        'height' => '110',
+        'width' => '200'
+    ]);
 }
-add_action( 'after_setup_theme', 'wpcurso_config', 0 );
+add_action( 'after_setup_theme', 'wphahamu_config', 0 );
 
 // Registrando Sidebars
 add_action('widgets_init', 'wpcurso_sidebars');

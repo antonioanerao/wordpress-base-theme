@@ -6,11 +6,9 @@
 					<div class="row">
                         <div class="col-sm-12">
                             <?php
-                                if(is_active_sidebar('slide-1')) {
-                                    dynamic_sidebar('slide-1');
-                                } else {
-                                    echo "Nenhum slide encontrado no momento";
-                                }
+                                $design = get_theme_mod('set_slider_option');
+                                $limit = get_theme_mod('set_slider_limit');
+                                echo do_shortcode('[recent_post_slider design="design-'.$design.'" limit="'.$limit.'"]');
                             ?>
                         </div>
                     </div>
