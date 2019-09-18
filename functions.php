@@ -1,4 +1,7 @@
 <?php
+// Require do arquivo customizer
+require_once get_template_directory() . '/inc/customizer.php';
+
 // Carregando nossos scripts e folhas de estilos
 function load_scripts(){
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',

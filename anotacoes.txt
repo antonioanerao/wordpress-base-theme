@@ -15,3 +15,6 @@
 #Header
 - A função wp_title() retorna o título da página (para versões antigas WP)
 - A função bloginfo('charset') configura o charset do site automaticamente
+
+#documentação
+- WordPress Customizer Sanitization: https://divpusher.com/blog/wordpress-customizer-sanitization-examples/
