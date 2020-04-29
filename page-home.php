@@ -45,7 +45,7 @@
                                 <h1>Latest News</h1>
                                 <div class="row">
                                     <?php
-                                        $featured = new WP_Query('post_type=post&posts_per_page=1&cat=96');
+                                        $featured = new WP_Query('post_type=post&posts_per_page=1');
                                         if($featured->have_posts()) : while($featured->have_posts()) :
                                             $featured->the_post();
                                     ?>

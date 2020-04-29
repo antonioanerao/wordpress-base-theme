@@ -112,7 +112,6 @@ add_action('customize_register', 'wphahamu_customizer');
  */
 function wphahamu_sanitize_select( $input, $setting )
 {
-
     //input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only
     $input = sanitize_key($input);
 

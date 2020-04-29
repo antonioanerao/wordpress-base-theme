@@ -9,8 +9,11 @@
         </div>
 
         <div class="content">
-            <img src="<?php echo $image[0]; ?>" class="img-fluid img-thumbnail">
-            <?php the_content(); ?>
+            <?php if ( has_post_thumbnail() ) {
+                the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid img-thumbnail']);
+            } else { ?>
+                <img src="<?php bloginfo('template_directory'); ?>/images/default-image.jpg" alt="<?php the_title(); ?>" />
+            <?php } ?>            <?php the_content(); ?>
         </div>
     </header>
 </article>

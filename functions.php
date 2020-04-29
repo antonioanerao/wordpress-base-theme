@@ -34,6 +34,7 @@ function wphahamu_config(){
 	);
 	add_theme_support( 'custom-header', $args );
 	add_theme_support( 'post-thumbnails' );
+    add_image_size( 'single-post-thumbnail', 1024, 800 );
 	add_theme_support( 'post-formats', array( 'video', 'image' ) );
 	add_theme_support('title-tag');
 	add_theme_support('custom-logo', [
@@ -44,8 +45,8 @@ function wphahamu_config(){
 add_action( 'after_setup_theme', 'wphahamu_config', 0 );
 
 // Registrando Sidebars
-add_action('widgets_init', 'wpcurso_sidebars');
-function wpcurso_sidebars(){
+add_action('widgets_init', 'wp_sidebar');
+function wp_sidebar(){
     register_sidebar([
         'name' => 'Home Page Sidebar',
         'id' => 'sidebar-1',
